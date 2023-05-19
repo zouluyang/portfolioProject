@@ -1,3 +1,13 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: initial;
+    text-decoration: underline;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -57,17 +67,47 @@ nav ul li a:hover {
 .about,
 .blog,
 .contact {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
-h2 {
-    font-size: 1.8rem;
+.about {
+    margin-top: 10%;
+}
+
+h2,
+span {
+    font-size: 3rem;
     color: rgba(0,0,0,0.8);
     font-family: Calibri, sans-serif;
     font-weight: 300;
+    margin-bottom: 4rem;
+}
+
+.about .grid-container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 20% 20% 60%;
+    grid-auto-flow: row;
+    gap: 1rem 0;
+}
+
+span {
+    font-size: 1.2rem;
+}
+
+.contact {
+    margin-top: 10%;
+}
+
+.contact .grid-container {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    grid-auto-flow: row;
+    gap: 1rem 0;
+}
+
+footer {
+    margin: 1rem 0;
 }
 
 footer ul {
