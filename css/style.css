@@ -9,8 +9,8 @@ body {
 }
 
 header {
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
 }
@@ -54,12 +54,13 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-main {
-    width: 80%;
-}
+.about,
+.blog,
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-#about {
-    display: none;
 }
 
 h2 {
